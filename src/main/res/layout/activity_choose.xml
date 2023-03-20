@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Choose">
+
+    <TextView
+        android:id="@+id/mood_prompt2"
+        android:layout_width="311dp"
+        android:layout_height="380dp"
+        android:clickable="false"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="How are you feeling today?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/good"
+        android:layout_width="311dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00BCD4"
+        android:onClick="goodChosen"
+        android:text="Good"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bad" />
+
+    <Button
+        android:id="@+id/bad"
+        android:layout_width="311dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#F44336"
+        android:onClick="badChosen"
+        android:text="@string/bad_prompt"
+        app:iconTint="#F44336"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mood_prompt2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
